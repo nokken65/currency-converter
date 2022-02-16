@@ -1,0 +1,22 @@
+{
+  "name": "Currency converter",
+  "dockerFile": "Dockerfile",
+  "appPort": [3000],
+  "build": {
+    "args": {
+      "network": "host"
+    }
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "dsznajder.es7-react-js-snippets"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "sh"
+  },
+  "postCreateCommand": "yarn install",
+  "runArgs": ["-u", "node"]
+}
